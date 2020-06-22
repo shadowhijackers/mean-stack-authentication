@@ -5,7 +5,9 @@ import {environment} from "../../../environments/environment";
 import {catchError} from "rxjs/operators";
 import {Observable, of} from "rxjs";
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class ApiService {
 
   constructor(
